@@ -1,10 +1,9 @@
--- lua/myplugin/init.lua
 local M = {}
 
 function M.open_floating_window()
   local opts = {
     relative = "editor",    -- Relative to the entire editor
-    width = 150,             -- Width of the window
+    width = 100,             -- Width of the window
     height = 30,            -- Height of the window
     row = (vim.o.lines - 10) / 2, -- Center vertically
     col = (vim.o.columns - 50) / 2, -- Center horizontally
@@ -30,4 +29,11 @@ function M.close_floating_window()
 end
 
 return M
+
+
+
+
+
+
+
 
